@@ -13,24 +13,24 @@ body {
     border-radius: 12px; /* Rounds corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     width: 320px; /* Sets a fixed width */
+    max-height: 400px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Allows scrolling if content overflows */
     text-align: center; /* Center text inside the container */
 }
 
 h1 {
     text-align: center;
-    font-size: 2rem;  
+    font-size: 1.8rem;  /* Adjusted font size */
     color: #2c3e50; /* Darker color for the heading */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between elements */
+    gap: 10px; /* Space between elements */
     align-items: stretch; /* Stretches items to full width */
-    padding: 20px; 
-    border-radius: 10px; 
+    padding: 5px; 
     background-color: #f7f9fc; /* Very light background for form */
-    transition: all 0.3s ease; /* Smooth transition for any changes */
 }
 
 label {
@@ -90,7 +90,9 @@ input:disabled {
     }
 
     .container {
-        padding: 15px; /* Less padding on smaller screens */
+        width: 90%; /* Full width on smaller screens */
+        max-height: none; /* Remove height restriction on smaller screens */
+        padding: 10px; /* Less padding on smaller screens */
     }
 
     input[type="text"], select, input[type="range"] {
