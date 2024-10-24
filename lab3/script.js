@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tipAmountInput = document.getElementById('tipAmount');
     const totalWithTipInput = document.getElementById('totalWithTip');
     const currencySelect = document.getElementById('currency');
+    const errorMessageDiv = document.getElementById('errorMessage');
 
     const currencyRates = {
         'USD': 1,
@@ -14,12 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function calculateTip() {
+        // Clear any previous error messages
+        errorMessageDiv.style.display = 'none';
+        errorMessageDiv.textContent = '';
+
         let billTotal = parseFloat(billTotalInput.value);
         let tipPercentage = parseInt(tipSlider.value);
 
         // Validate input
-        if (isNaN(billTotal) || billTotal < 0) {
-            alert("Please enter a valid positive number for Bill Total.");
+        if (isNaN(billTotal) || billTotal <= 0) {
+            // Show error message if the input is invalid
+            errorMessageDiv.textContent = "Please enter a valid positive number for Bill Total.";
+            errorMessageDiv.style.display = 'block';
             return;
         }
 

@@ -15,7 +15,12 @@ h1 {
     font-size: 1.8rem;
     color: #333;
 }
-
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: none; /* Initially hidden */
+}
 /* Container Styles */
 .container {
     background-color: #fff; /* White background for the form */

@@ -9,20 +9,26 @@
 <body>
     <div class="container">
         <h1>Tip Calculator</h1>
+        <!-- Error message area -->
+       
+        
         <form id="tipForm">
             <label for="billTotal">Bill Total ($):</label>
             <input type="text" id="billTotal" placeholder="Enter total bill">
-
+            <br>
             <label for="tipSlider">Tip Percentage (%):</label>
             <input type="range" id="tipSlider" min="0" max="100" value="15">
-            <input type="text" id="tipPercentage" value="15" disabled>
+            <span id="tipPercentageDisplay">15</span>%<br>
+            <br>
 
             <label for="tipAmount">Tip Amount ($):</label>
-            <input type="text" id="tipAmount" disabled>
-
+            <input type="text" id="tipAmount" disabled><br>
+            <br>
+            <div id="errorMessage" class="error-message"></div>
+            <br>
             <label for="totalWithTip">Total Bill with Tip ($):</label>
             <input type="text" id="totalWithTip" disabled>
-
+            <br>
             <label for="currency">Select Currency:</label>
             <select id="currency">
                 <option value="USD">USD - US Dollar</option>
@@ -30,6 +36,7 @@
                 <option value="JPY">JPY - Japanese Yen</option>
                 <option value="RUB">RUB - Russian Ruble</option>
             </select>
+            <br>
         </form>
     </div>
     <script src="script.js"></script>
