@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currencyRates = {
         'USD': 1,
         'INR': 84.07,
-        'JPY': 149.34,
-        'RUB': 100.32
+        'JPY': 149.34
     };
 
     function calculateTip() {
