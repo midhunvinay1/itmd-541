@@ -16,27 +16,29 @@
         <form id="tipForm">
             <label for="billTotal">Bill Total ($):</label>
             <input type="text" id="billTotal" placeholder="Enter total bill">
-            
+            <br>
+            <br>
             <label for="tipSlider">Tip Percentage (%):</label>
             <input type="range" id="tipSlider" min="0" max="100" value="0">
-            <span id="tipPercentageDisplay">0</span>%
-            
+            <span id="tipPercentageDisplay">0</span>%<br>
+            <br>
 
             <label for="tipAmount">Tip Amount ($):</label>
-            <input type="text" id="tipAmount" disabled>
-            
+            <input type="text" id="tipAmount" disabled><br>
+            <br>
             <div id="errorMessage" class="error-message"></div>
-            
+            <br>
             <label for="totalWithTip">Total Bill with Tip ($):</label>
             <input type="text" id="totalWithTip" disabled>
-            
+            <br>
+            <br>
             <label for="currency">Select Currency:</label>
             <select id="currency">
                 <option value="USD">USD - US Dollar</option>
                 <option value="INR">INR - Indian Rupee</option>
                 <option value="JPY">JPY - Japanese Yen</option>
             </select>
-            
+            <br>
         </form>
     </div>
     <script src="script.js"></script>

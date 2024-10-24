@@ -17,18 +17,6 @@ h1 {
     color: #333;
 }
 
-/* Container Styles */
-.container {
-    background-color: #fff; /* White background for the form */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    margin: 20px;
-}
-
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -38,31 +26,53 @@ form {
     border-radius: 10px; /* Gives the form smooth rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
     background-color: #f9f9f9; /* Light background color for contrast */
+    transition: all 0.3s ease; /* Smooth transition for any changes to form styles */
 }
 
-
-label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-input[type="text"], select, input[type="range"] {
+input[type="text"], select, input[type="range"], button {
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition for input elements and buttons */
 }
 
-input[type="range"] {
-    margin-bottom: 10px;
+/* Hover effect on buttons */
+button:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Focus effect for inputs and select elements */
+input[type="text"]:focus, select:focus, input[type="range"]:focus {
+    outline: none; /* Removes default browser outline */
+    border-color: #333; /* Adds a custom border color when focused */
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5); /* Adds a subtle shadow for focus state */
+    transition: all 0.3s ease; /* Smooth focus transition */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 /* Error message styles */
 .error-message {
-    color: red;
+    color: red; /* Red text for visibility */
     font-size: 1rem;  /* Standard font size */
     margin-bottom: 15px; /* Space between error and form elements */
     background-color: #ffe6e6; /* Light red background for better visibility */
@@ -76,21 +86,6 @@ input[type="range"] {
 input:disabled {
     background-color: #f0f0f0;
     color: #666;
-}
-
-/* Button styling for mobile */
-button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
 }
 
 /* Mobile responsiveness */
