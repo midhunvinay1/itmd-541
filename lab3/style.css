@@ -1,23 +1,19 @@
 /* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e0e0e0; /* Light grey background */
+html, body {
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    padding: 0;
+    background-color: #e0e0e0; /* Light grey background */
+    font-family: 'Arial', sans-serif;
 }
 
+/* Headings */
 h1 {
     text-align: center;
-    font-size: 1.8rem;
-    color: #333;
-}
-h3 {
-    text-align: center;
-    font-size: 0.9rem;
+    font-size: 2.2rem;  /* Larger heading for desktop */
     color: #333;
 }
 
@@ -59,7 +55,7 @@ input[type="range"] {
 
 /* Error message styles */
 .error-message {
-    color: red; /* Red text for visibility */
+    color: red;
     font-size: 1rem;  /* Standard font size */
     margin-bottom: 15px; /* Space between error and form elements */
     background-color: #ffe6e6; /* Light red background for better visibility */
