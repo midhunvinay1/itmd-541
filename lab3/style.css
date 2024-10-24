@@ -32,7 +32,14 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Adds consistent spacing between form elements */
+    align-items: stretch; /* Ensure form elements take up full width */
+    padding: 20px; /* Adds internal padding to the form for better spacing */
+    border-radius: 10px; /* Gives the form smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color for contrast */
 }
+
 
 label {
     margin: 10px 0 5px;
