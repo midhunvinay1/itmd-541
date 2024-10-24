@@ -1,32 +1,31 @@
-/* Global Styles */
+
 html, body {
-    height: 100%; /* Ensure the body takes up the full viewport height */
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #383737f8; /* Light grey background */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0; 
+    background-color: rgba(60, 126, 161, 0.852);
     font-family: 'Arial', sans-serif;
 }
 
-/* Headings */
+
 h1 {
     text-align: center;
-    font-size: 2.2rem;  /* Larger heading for desktop */
+    font-size: 2.2rem;  
     color: #333;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds consistent spacing between form elements */
-    align-items: stretch; /* Ensure form elements take up full width */
-    padding: 20px; /* Adds internal padding to the form for better spacing */
-    border-radius: 10px; /* Gives the form smooth rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    background-color: #f9f9f9; /* Light background color for contrast */
-    transition: all 0.3s ease; /* Smooth transition for any changes to form styles */
+    gap: 15px;
+    align-items: stretch;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+    transition: all 0.3s ease;
 }
 
 input[type="text"], select, input[type="range"], button {
@@ -35,26 +34,26 @@ input[type="text"], select, input[type="range"], button {
     border-radius: 5px;
     font-size: 1rem;
     background-color: #fff;
-    transition: all 0.3s ease; /* Smooth transition for input elements and buttons */
+    transition: all 0.3s ease; 
 }
 
-/* Hover effect on buttons */
+
 button:hover {
     background-color: #555;
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth hover transition */
+    transition: all 0.3s ease; 
 }
 
-/* Focus effect for inputs and select elements */
+
 input[type="text"]:focus, select:focus, input[type="range"]:focus {
-    outline: none; /* Removes default browser outline */
-    border-color: #333; /* Adds a custom border color when focused */
-    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5); /* Adds a subtle shadow for focus state */
-    transition: all 0.3s ease; /* Smooth focus transition */
+    outline: none; 
+    border-color: #333; 
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5); 
+    transition: all 0.3s ease; 
 }
 
-/* Button styling */
+
 button {
     padding: 10px 15px;
     font-size: 1rem;
@@ -70,25 +69,25 @@ button:hover {
     background-color: #555;
 }
 
-/* Error message styles */
+
 .error-message {
-    color: red; /* Red text for visibility */
-    font-size: 1rem;  /* Standard font size */
-    margin-bottom: 15px; /* Space between error and form elements */
-    background-color: #ffe6e6; /* Light red background for better visibility */
+    color: red; 
+    font-size: 1rem;  
+    margin-bottom: 15px; 
+    background-color: #ffe6e6;
     padding: 10px;
     border: 1px solid red;
-    border-radius: 5px;  /* Rounded edges */
-    display: none; /* Initially hidden */
+    border-radius: 5px;  
+    display: none; 
 }
 
-/* Disabled inputs */
+
 input:disabled {
     background-color: #f0f0f0;
     color: #666;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
