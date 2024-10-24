@@ -1,12 +1,20 @@
 
-html, body {
+body {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
-    margin: 0; 
-    background-color: rgba(60, 126, 161, 0.852);
-    font-family: 'Arial', sans-serif;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: #f0f0f0; /* Optional: adds a background color */
+}
+
+.container {
+    background-color: #e7f3fe; /* Light background color */
+    padding: 20px; /* Adds padding around the form */
+    border-radius: 8px; /* Rounds corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    width: 300px; /* Sets a fixed width */
+    text-align: center; /* Center text inside the container */
 }
 
 
@@ -70,7 +78,7 @@ button:hover {
 }
 
 
-.error-message {
+.errorMessage {
     color: red; 
     font-size: 1rem;  
     margin-bottom: 15px; 
