@@ -1,111 +1,99 @@
-
 body {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Removes default margin */
-    background-color: #f0f0f0; /* Optional: adds a background color */
+    background-color: #f0f0f0; /* Light gray background */
 }
 
 .container {
-    background-color: #e7f3fe; /* Light background color */
+    background-color: #ffffff; /* White background for the container */
     padding: 20px; /* Adds padding around the form */
-    border-radius: 8px; /* Rounds corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-    width: 300px; /* Sets a fixed width */
+    border-radius: 12px; /* Rounds corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 320px; /* Sets a fixed width */
     text-align: center; /* Center text inside the container */
 }
 
-
 h1 {
     text-align: center;
-    font-size: 2.2rem;  
-    color: #333;
+    font-size: 2rem;  
+    color: #2c3e50; /* Darker color for the heading */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    align-items: stretch;
+    gap: 15px; /* Space between elements */
+    align-items: stretch; /* Stretches items to full width */
     padding: 20px; 
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    background-color: rgba(60, 126, 161, 0.852);
-    transition: all 0.3s ease;
+    background-color: #f7f9fc; /* Very light background for form */
+    transition: all 0.3s ease; /* Smooth transition for any changes */
+}
+
+label {
+    text-align: left; /* Align label text to the left */
+    font-weight: bold; /* Bold labels for emphasis */
 }
 
 input[type="text"], select, input[type="range"], button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-    transition: all 0.3s ease; 
+    padding: 12px; /* Slightly larger padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Font size */
+    background-color: #ffffff; /* White background for inputs */
+    transition: all 0.3s ease; /* Smooth transition for inputs */
 }
-
-
-button:hover {
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease; 
-}
-
 
 input[type="text"]:focus, select:focus, input[type="range"]:focus {
-    outline: none; 
-    border-color: #333; 
-    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5); 
-    transition: all 0.3s ease; 
+    outline: none; /* Removes default outline */
+    border-color: #3498db; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Shadow effect on focus */
 }
 
-
 button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    padding: 10px 15px; /* Button padding */
+    font-size: 1rem; /* Button font size */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* Removes default border */
+    background-color: #3498db; /* Primary color for the button */
+    color: white; /* Text color for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for button */
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #2980b9; /* Darker shade on hover */
 }
-
 
 .errorMessage {
-    color: red; 
+    color: #c0392b; /* Dark red for error messages */
     font-size: 1rem;  
     margin-bottom: 15px; 
-    background-color: #ffe6e6;
+    background-color: #ffe6e6; /* Light red background for errors */
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid #e74c3c; /* Red border for error messages */
     border-radius: 5px;  
-    display: none; 
+    display: none; /* Hidden by default */
 }
-
 
 input:disabled {
-    background-color: #f0f0f0;
-    color: #666;
+    background-color: #ecf0f1; /* Light gray for disabled inputs */
+    color: #95a5a6; /* Darker gray for text */
 }
-
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Responsive heading size */
     }
 
     .container {
-        padding: 15px;
+        padding: 15px; /* Less padding on smaller screens */
     }
 
     input[type="text"], select, input[type="range"] {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Slightly smaller font size */
     }
 }
