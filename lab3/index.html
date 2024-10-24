@@ -10,11 +10,12 @@
     <div class="container">
         <h1>Tip Calculator</h1>
         <!-- Error message area -->
-        <div id="errorMessage" class="error-message"></div>
+        
         
         <form id="tipForm">
             <label for="billTotal">Bill Total ($):</label>
             <input type="text" id="billTotal" placeholder="Enter total bill">
+            <br>
             <br>
             <label for="tipSlider">Tip Percentage (%):</label>
             <input type="range" id="tipSlider" min="0" max="100" value="15">
@@ -24,10 +25,11 @@
             <label for="tipAmount">Tip Amount ($):</label>
             <input type="text" id="tipAmount" disabled><br>
             <br>
-            
+            <div id="errorMessage" class="error-message"></div>
             <br>
             <label for="totalWithTip">Total Bill with Tip ($):</label>
             <input type="text" id="totalWithTip" disabled>
+            <br>
             <br>
             <label for="currency">Select Currency:</label>
             <select id="currency">
