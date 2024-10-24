@@ -51,10 +51,16 @@ input[type="text"], select, input[type="range"] {
 input[type="range"] {
     margin-bottom: 10px;
 }
+
+/* Error message styles */
 .error-message {
-    color: red;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    color: red; /* Red text for visibility */
+    font-size: 1rem;  /* Standard font size */
+    margin-bottom: 15px; /* Space between error and form elements */
+    background-color: #ffe6e6; /* Light red background for better visibility */
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;  /* Rounded edges */
     display: none; /* Initially hidden */
 }
 
