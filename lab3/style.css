@@ -4,7 +4,7 @@ body {
     align-items: center; /* Centers vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Removes default margin */
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #eaf4fc; /* Light blue background */
 }
 
 .container {
@@ -16,6 +16,7 @@ body {
     max-height: 400px; /* Set a maximum height for the container */
     overflow-y: auto; /* Allows scrolling if content overflows */
     text-align: center; /* Center text inside the container */
+    margin: 20px; /* Adds equal space around the container */
 }
 
 h1 {
@@ -29,7 +30,6 @@ form {
     flex-direction: column;
     gap: 10px; /* Space between elements */
     align-items: stretch; /* Stretches items to full width */
-    padding: 5px; 
     background-color: #f7f9fc; /* Very light background for form */
 }
 
