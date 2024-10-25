@@ -101,5 +101,16 @@ input[type="range"]::-moz-range-thumb {
     }
 
     
+
+    /* Hide currency conversion on mobile */
+    .currency-exchange {
+        display: none; /* Hide the currency conversion section */
+    }
+
+    input[type="text"], select, input[type="range"] {
+        font-size: 0.9rem;
+        width: 100%; /* Make inputs full width */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
 }
 
