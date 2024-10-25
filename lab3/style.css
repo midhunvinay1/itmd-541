@@ -91,12 +91,25 @@ input[type="range"]::-moz-range-thumb {
         font-size: 1.5rem;
     }
 
-    .container, .currency-exchange {
+    .container {
         padding: 15px;
         max-width: 100%; 
+        margin: 0 auto;  /* Center the container */
+        display: flex;    /* Use flexbox to center content */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center;  /* Center child elements */
+    }
+
+    .currency-exchange {
+        padding: 15px;  /* You can keep or adjust padding */
+        max-width: 100%; 
+        margin: 0 auto; /* Center the currency-exchange box */
     }
 
     input[type="text"], select, input[type="range"] {
         font-size: 0.9rem;
+        width: 100%; /* Make inputs full width */
+        box-sizing: border-box; /* Include padding in width calculation */
     }
 }
+
