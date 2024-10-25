@@ -92,6 +92,7 @@ input[type="range"]::-moz-range-thumb {
         justify-content: center;
         align-items: center;
         padding: 10px;
+        flex-direction: column; /* Stack container and currency-exchange vertically */
     }
 
     h1 {
@@ -107,9 +108,12 @@ input[type="range"]::-moz-range-thumb {
         align-items: center;
     }
 
-    /* Hide or shrink currency conversion on mobile */
+    /* Show currency exchange below tip calculator on mobile */
     .currency-exchange {
-        display: none;
+        display: block;
+        margin: 20px 0;  /* Add margin for spacing between sections */
+        width: 100%;     /* Make it full-width for smaller devices */
+        max-width: 100%; /* Ensure it doesn't overflow on small screens */
     }
 
     input[type="text"], select, input[type="range"] {
