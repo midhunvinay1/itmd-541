@@ -24,9 +24,7 @@ body {
     max-height: 160px;
     display: inline-block;
     margin-left: 20px; 
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden;    /* Hide overflowed content */
-    text-overflow: ellipsis; /* Optional: Adds "..." for overflowed text */
+    white-space: nowrap; 
 }
 
 
