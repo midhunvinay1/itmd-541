@@ -17,6 +17,7 @@
             <input type="text" id="billTotal" placeholder="Enter total bill">
             
             <br>
+            <div id="errorMessage" class="error-message"></div>
             <label for="tipSlider">Tip Percentage (%):</label>
             <input type="range" id="tipSlider" min="0" max="100" value="0">
             <span id="tipPercentageDisplay">0</span>%
@@ -33,7 +34,7 @@
             <label for="tipAmount">Tip Amount ($):</label>
             <input type="text" id="tipAmount" disabled><br>
             
-            <div id="errorMessage" class="error-message"></div>
+            
             
             <label for="totalWithTip">Total Bill with Tip ($):</label>
             <input type="text" id="totalWithTip" disabled>
