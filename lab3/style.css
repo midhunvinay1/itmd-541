@@ -107,7 +107,7 @@ input[type="range"]::-moz-range-thumb {
     }
 
     /* Hide currency conversion on mobile */
-    .currency-conversion {
+    .currency-exchange {
         display: none; /* Hide the currency conversion section */
     }
 
