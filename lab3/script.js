@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tipPercentage = parseInt(tipSlider.value);
 
         // Validate input
-        if (isNaN(billTotal) || billTotal <= 0) {
+        if (isNaN(billTotal) || billTotal <= 0 ||  !Number.isInteger(billTotal)) {
             // Show error message if the input is invalid
             errorMessageDiv.textContent = "Please enter a valid positive number for Bill Total.";
             errorMessageDiv.style.display = 'block';  // Make error visible
