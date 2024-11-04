@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         errorMessageDiv.textContent = "Please enter a positive number for Bill Total.";
         errorMessageDiv.style.display = 'block';  
-        
+        tipAmountInput.value="0.00";
         totalWithTipInput.value = "0.00";
     } else if (!Number.isInteger(billTotal)) {
         
